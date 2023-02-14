@@ -14,11 +14,13 @@ export class HomeComponent implements OnInit {
   public traiCay2 = [{
     ten: 'Apple',
     gia: 23,
-    giaKhuyenMai: 20
+    giaKhuyenMai: 20,
+    haGia: true
   },{
     ten: 'Coconut',
     gia: 12,
-    giaKhuyenMai: 10
+    giaKhuyenMai: 12,
+    haGia: false
   },{
     ten: 'Banana',
     gia: 23,

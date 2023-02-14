@@ -27,6 +27,7 @@
             <th>STT</th>
             <th>Tên</th>
             <th>Giá</th>
+            <th>Ghi chú</th>
         </tr>
 
         <tr *ngFor=" let trai of traiCay2; let i = index">
@@ -35,13 +36,9 @@
             <td>
                 <span [ngClass]="{'so-am' : trai.gia < 0 }">{{trai.gia}}</span>
             </td>
-
-            <!-- <td *ngIf="trai.giaKhuyenMai > 0 then giaKhuyenMai; else gia">
-
-                <ng-template #giaKhuyenMai><span [ngClass]="{'so-am' : trai.giaKhuyenMai< 0 }">{{trai.giaKhuyenMai}} vnđ</span></ng-template>
-                <ng-template #gia><span>{{trai.gia}} vnđ</span></ng-template>
-                
-            </td> -->
+            <td>
+                <span *ngIf="trai.haGia">Đang giảm giá</span>
+            </td>
         </tr>
 
     </table>
