@@ -1,0 +1,30 @@
+p.age{
+    color: blue;
+    opacity: .8;
+    &:hover{
+        opacity: 1;
+        cursor: pointer;
+    }
+}
+
+.tre{
+    color: green;
+}
+
+.gia{
+    color: red;
+}
+
+.table, td,th{
+    border-collapse: collapse;
+    border: 1px solid #000;
+    text-align: center;
+  }
+
+  td,th{
+    min-width: 100px;
+  }
+
+  .so-am{
+    color: #ff0000;
+  }
