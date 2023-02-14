@@ -3,20 +3,20 @@
     <input type="text" [(ngModel)]="name">
     <button (click)="resetName()">Reset</button>
 </div>
+
+
 <br>
 <div>
     <input type="text" [(ngModel)] = "age">
     <p class="age" >Tuổi của bạn là {{age}}</p>
-    <!-- <p *ngIf="age <= 18">Trẻ</p> -->
-    <!-- <p *ngIf="age > 18">Già</p> -->
 
     <div *ngIf="age <= 18; then tre; else gia"></div>
     <ng-template #tre> <p class="tre" >Young</p> </ng-template>
     <ng-template  #gia> <p class="gia">Old</p> </ng-template>
 
-    <div *ngFor=" let trai of traiCay"> 
+    <!-- <div *ngFor=" let trai of traiCay"> 
         <p>{{trai}}</p>
-    </div>
+    </div> -->
 </div>
 
 <br>
@@ -39,7 +39,24 @@
             <td>
                 <span *ngIf="trai.haGia">Đang giảm giá</span>
             </td>
+            <td>
+                <div *ngIf="trai.giaKhuyenMai > 0; then tre; else gia"></div>
+                <ng-template #tre> <p>{{trai.giaKhuyenMai | currency:'VND':'symbol':'.0'}}</p> </ng-template>
+                <ng-template  #gia> <p>{{trai.gia | currency:'VND':'symbol':'.0'}}</p> </ng-template>
+            </td>
         </tr>
 
     </table>
+</div>
+<br>
+<div>
+    Thành phố
+    <select name="city" id="city" (change)="changeCity($event)" >
+        <option *ngFor="let data of VietNamCity" [value]="data.city">{{data.city}}</option>
+      </select>
+    <br>
+    Quận/Huyện
+    <select name="city" id="city" >
+        <option *ngFor="let data of districts" [value]="">{{data}}</option>
+      </select>
 </div>
