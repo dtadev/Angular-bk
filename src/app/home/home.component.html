@@ -32,9 +32,9 @@
 
         <tr *ngFor=" let trai of traiCay2; let i = index">
             <td class="">{{i + 1}}</td>
-            <td>{{trai.ten}}</td>
+            <td>{{trai.ten | uppercase}}</td>
             <td>
-                <span [ngClass]="{'so-am' : trai.gia < 0 }">{{trai.gia}}</span>
+                <span [ngClass]="{'so-am' : trai.gia < 0 }">{{trai.gia | currency:'VND':'symbol':'.0'}}</span>
             </td>
             <td>
                 <span *ngIf="trai.haGia">Đang giảm giá</span>

@@ -13,13 +13,13 @@ export class HomeComponent implements OnInit {
   public traiCay = ['apple','banana','orange','purple', 'grape'];
   public traiCay2 = [{
     ten: 'Apple',
-    gia: 23,
-    giaKhuyenMai: 20,
+    gia: 23500,
+    giaKhuyenMai: 20000,
     haGia: true
   },{
     ten: 'Coconut',
-    gia: 12,
-    giaKhuyenMai: 12,
+    gia: 12900,
+    giaKhuyenMai: 10900,
     haGia: false
   },{
     ten: 'Banana',
@@ -31,8 +31,6 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     console.log(`traiCay = `,this.traiCay);
   }
-
-  
 
   public resetName() :void{
     this.name = '';
