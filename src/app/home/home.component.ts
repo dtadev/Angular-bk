@@ -72,7 +72,6 @@ export class HomeComponent implements OnInit {
     // if(search && search.length > 0)
     //   this.districts = search[0].district;
     
-
     //cach 2
     this.districts = this.VietNamCity.find(data => data.city === chosenCity)?.district || [];
   }
