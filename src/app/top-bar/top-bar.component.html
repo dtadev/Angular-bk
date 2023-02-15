@@ -1,6 +1,16 @@
-<a [routerLink]="['/']">
-    <h1>My Store</h1>
-  </a>
-  
-  <a routerLink="/cart" class="button fancy-button">Checkout</a>
+<div style="width: 100%; display: flex; justify-content: space-between; align-items: center;">
+  <div>
+    <a [routerLink]="['/']">
+      <h1>My Store</h1>
+    </a>
+  </div>
+  <ul class="menu">
+      <li><a routerLink="/home">HOME</a></li>
+      <li><a routerLink="/products">PRODUCT</a></li>
+      <li><a routerLink="/aboutus">ABOUT US</a></li>
+  </ul>
+  <div>
+    <a routerLink="/cart" class="button fancy-button">Checkout</a>
+  </div>
+</div>
   
