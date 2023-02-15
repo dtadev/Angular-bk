@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AboutComponent } from './about/about.component';
+import { HightLightComponent } from './Directives/hight-light/hight-light.component';
+import { HighLightDirective } from './Directives/high-light.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     PageNotFoundComponent,
-    AboutComponent
+    AboutComponent,
+    HightLightComponent,
+    HighLightDirective
   ],
   imports: [
     BrowserModule,
