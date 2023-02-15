@@ -1,0 +1,14 @@
+<p>Counter = {{counter}}</p>
+<p>Counter ^ 2 = {{counterBinhPhuong}}</p>
+<br>
+Thành phố, tỉnh thành
+<select name="city" id="city" (change)="changeCity($event)">
+    <option *ngFor="let data of vietnamData" value="{{data.city}}">{{data.city}}</option>
+
+</select>
+<br>
+Quận/Huyện
+<select id="districts">
+   
+    <option *ngFor="let district of districts" value="district.city">{{district}}</option>
+</select>

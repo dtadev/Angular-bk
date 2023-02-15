@@ -16,6 +16,7 @@ import { NotFoundPageComponent } from './not-found-page/not-found-page.component
 import { ShippingComponent } from './shipping/shipping.component';
 import { HomeComponent } from './home/home.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { LearnComponent } from './learn/learn.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     NotFoundPageComponent,
     ShippingComponent,
     HomeComponent,
-    AboutusComponent
+    AboutusComponent,
+    LearnComponent
   ],
   imports: [
     AppRoutingModule,
@@ -44,6 +46,7 @@ import { AboutusComponent } from './aboutus/aboutus.component';
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
+      { path: 'learn', component: LearnComponent },
       { path: '**', component: NotFoundPageComponent },
     ])
   ],
