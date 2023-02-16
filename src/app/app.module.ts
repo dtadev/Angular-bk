@@ -18,6 +18,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { LearnComponent } from './learn/learn.component';
 import { HighLightDirective } from './Directives/high-light.directive';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { HighLightDirective } from './Directives/high-light.directive';
     AboutusComponent,
     LearnComponent,
     HighLightDirective,
+    HighlightDirective,
   ],
   imports: [
     AppRoutingModule,

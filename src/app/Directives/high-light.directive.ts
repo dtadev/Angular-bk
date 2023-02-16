@@ -5,16 +5,9 @@ import { Directive, ElementRef, Input,OnInit } from '@angular/core';
 })
 export class HighLightDirective {
 
-  @Input() appHighlight = 'blue';
 
- 
-
-  constructor(private el:ElementRef) { 
-   
-  }
-
-  ngOnInit(): void{
-    this.el.nativeElement.style.color = this.appHighlight;
-  }
-
+  @Input() appHighLight = '';
+  constructor(private el: ElementRef) {
+    this.el.nativeElement.style.backgroundColor = 'yellow';
+ }
 }

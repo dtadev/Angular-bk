@@ -11,8 +11,8 @@ export class LearnComponent implements OnInit {
   public counter = 0;
 
   public counterBinhPhuong = 0;
-
-  public myColor = 'red';
+  
+  myColor = 'yellow';
 
   constructor(private common: CommonService){}
 
