@@ -1,5 +1,5 @@
 import { CommonService } from './../Services/common.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-learn',
@@ -11,6 +11,9 @@ export class LearnComponent implements OnInit {
   public counter = 0;
 
   public counterBinhPhuong = 0;
+
+  public myColor = 'red';
+
   constructor(private common: CommonService){}
 
   public districts:string [] = [];
@@ -33,6 +36,8 @@ export class LearnComponent implements OnInit {
 
     console.log('vietnamData =',this.vietnamData);
   }
+
+  
 
   public changeCity(event: any):void {
     const city = event.target.value;

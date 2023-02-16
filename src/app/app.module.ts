@@ -17,6 +17,7 @@ import { ShippingComponent } from './shipping/shipping.component';
 import { HomeComponent } from './home/home.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { LearnComponent } from './learn/learn.component';
+import { HighLightDirective } from './Directives/high-light.directive';
 
 @NgModule({
   declarations: [
@@ -31,13 +32,14 @@ import { LearnComponent } from './learn/learn.component';
     ShippingComponent,
     HomeComponent,
     AboutusComponent,
-    LearnComponent
+    LearnComponent,
+    HighLightDirective,
   ],
   imports: [
     AppRoutingModule,
     ReactiveFormsModule,
     BrowserModule,   
-    HttpClientModule,
+    HttpClientModule,    
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'home', component: HomeComponent },
