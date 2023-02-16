@@ -7,6 +7,7 @@ export class HighLightDirective {
 
 
   @Input() appHighLight = '';
+  
   constructor(private el: ElementRef) {
     this.el.nativeElement.style.backgroundColor = 'yellow';
  }

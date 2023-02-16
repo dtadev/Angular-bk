@@ -12,7 +12,7 @@ export class LearnComponent implements OnInit {
 
   public counterBinhPhuong = 0;
   
-  myColor = 'yellow';
+  myColor = '';
 
   constructor(private common: CommonService){}
 
