@@ -36,7 +36,7 @@ export class LearnComponent implements OnInit {
 
   public changeCity(event: any):void {
     const city = event.target.value;
-    console.log(city);
+
     if(!city)
     {
       return;
